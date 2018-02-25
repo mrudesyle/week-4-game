@@ -1,0 +1,157 @@
+/* Layout Elements */
+
+.myGrid {
+  background-image: url('../images/costa_rica.jpg');
+  background-attachment: scroll;
+  background-position: left top;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-blend-mode: normal;
+}
+
+body {
+  margin-top: 0vh;
+  padding: .625rem;
+}
+
+#green {
+  margin-top: 0;
+  padding-left: 0;
+  min-height: 100px;
+  border-width: .125rem;
+  border-style: solid;
+  background-color: #3bb373;
+}
+
+#blue {
+  margin-top: 2px;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+  min-height: 100px;
+  border-width: .125rem;
+  border-style: solid;
+  background-color: #01ffff;
+}
+
+.subgrid-row-styled {
+  margin-bottom: 6px;
+  padding-top: 0;
+  padding-left: 19px;
+}
+
+.subgrid-column-white {
+  margin-top: 4px;
+  padding-top: 0;
+  border-width: .125rem;
+  border-style: solid;
+  background-color: rgba(255, 255, 255, .78);
+}
+
+#gems-row {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+#curScore {
+  background-color: #008a8a;
+}
+
+.gemPic {
+  margin-top: 5px;
+  padding-top: 0;
+  border-width: .125rem;
+  border-style: solid;
+  box-shadow: rgba(0, 0, 0, .5) 5px 5px 10px 0;
+}
+
+.responsive-picture img {
+  width: 100%;
+  height: 100%
+}
+
+
+.li-bold {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#numberToBeat {
+  color: #d90205;
+  font-size: 24px;
+}
+
+#currentScore {
+  color: #fff;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 36rem) {
+  /* Layout Elements */
+.subgrid-row-styled {
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  /* Layout Elements */
+
+#blue {
+    margin-top: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+.subgrid-row-styled {
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  /* Layout Elements */
+.myGrid {
+    background-size: cover;  }
+
+#blue {
+    margin-left: 0;
+  }
+
+.subgrid-row-styled {
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  /* Layout Elements */
+  body.myGrid {
+    margin-top: 0;
+    margin-left: 33px;
+  }
+
+ .header-column {
+    margin-top: 0vh;
+  }
+
+
+#blue {
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #01ffff;
+  }
+
+.subgrid-row-styled {
+    margin-bottom: 6px;
+  }
+
+.subgrid-column-white {
+    background-color: rgba(255, 255, 255, .78);
+  }
+
+  .li-bold {
+    font-weight: 700;
+  }
+}

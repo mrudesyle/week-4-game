@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Crystals Collector</title>
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap4.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="myGrid">
+  <div class="row header-row">
+    <div class="col-xs-6 header-column">
+      <div class="subgrid">
+        <div class="row subgrid-row-styled">
+          <div class="col-xs-12 col-xl-12 subgrid-column-white">
+            <h1>Crystals Collector!</h1>
+          </div>
+          <div class="col-xs-12  col-xl-12 subgrid-column-white">
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total
+              score.</p>
+            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+          </div>
+        </div>
+        <div class="row subgrid-row-styled">
+          <div class="col-xs-12 col-sm-12 col-md-7 col-xl-7" id="green">
+            <ul class="unorder-list">
+              <li class="list-item li-bold" id="numberToBeat"></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-5 col-xl-5" id="blue">
+            <ul class="unorder-list">
+              <li class="list-item li-bold" id="wins"></li>
+              <li class="list-item li-bold" id="losses"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row subgrid-row-3" id="gems-row">
+          <div class="col-xs-6 col-md-3">
+            <div class="responsive-picture gemPic" id="gem1">
+              <img src="images/diamond.jpg">
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="responsive-picture gemPic" id="gem2">
+              <img src="images/ruby-gem-md.png">
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="responsive-picture gemPic" id="gem3">
+              <img src="images/emerald.png">
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="responsive-picture gemPic" id="gem4">
+              <img src="images/yellow.png">
+            </div>
+          </div>
+        </div>
+        <div class="row subgrid-row-styled">
+          <div class="col-xs-12 col-sm-12 col-md-7 col-xl-7 subgrid-column-white " id="white">
+            <h4>Your total score is:</h4>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-7 col-xl-7 subgrid-col-green" id="curScore">
+            <ul class="unorder-list">
+              <li class="list-item li-bold" id="currentScore"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Script -->
+  <script type="text/javascript" src="js/logic.js"></script>
+</body>
+
+</html>
