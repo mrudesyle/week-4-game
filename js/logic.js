@@ -9,7 +9,7 @@ var incrementVal = 1;
 var gemArray = ["#gem1", "#gem2", "#gem3", "#gem4"];
 
 //display initial declared values to use
-$("#numberToBeat").text("Number to Beat: " + numberToBeat);
+$("#numberToBeat").text("Number to Match: " + numberToBeat);
 $("#currentScore").text(currentScore);
 $("#wins").text("Wins: " + wins);
 $("#losses").text("Losses: " + losses);
